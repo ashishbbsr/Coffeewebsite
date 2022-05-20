@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+        }
+        header{
+            background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),  url(image/coffee.jpg);
+            height: 100vh;
+            width: 100vw;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            height: 15vh;
+           
+        }
+   .logo {
+        color: whitesmoke;
+        font-size: 33px;
+        margin: 17px 12px;
+        border: 4px solid red;
+        border-radius: 50%;
+        height: 80px;
+        width: 80px;
+        padding: 17px;
+        }
+        .navitems{
+            height: 12vh;
+            width: 50%;
+           
+        }
+        .navitems ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            text-decoration: none;
+            margin: 30px 0px;
+        }
+        .navitems ul li a{
+            text-decoration: none;
+            color: whitesmoke;
+            font-size: 20px;
+            font-size: 28px;
+            font-weight: bolder;
+        }
+         /* Navlinks hover effect styling  */
+         .navitems li a::after{
+            content: " ";
+            width: 0%;
+            height: 4px;
+            background: #f44336;
+            display: block;
+            margin:auto;
+            transition: 0.4s;
+        }
+        .navitems li a:hover::after{
+            width: 88%;
+        }
+        .main-content{
+            color: whitesmoke;
+           
+            position: absolute;
+            text-align: center;
+            top: 32%; 
+            left: 30%;
+        }
+        h1{
+            font-size: 240%;
+            margin-bottom: 30px;
+        }
+        .btn{
+            border: 4px solid green;
+            color:#bf55ec;
+            
+            display: inline-block;
+            text-decoration: none;
+            font-size: 32px;
+            text-transform: uppercase;
+            border-radius: 100px;
+            margin: 10px 12px ;
+            padding: 5px 10px;
+        }
+        .open{
+                display: none;
+            }
+            .icons{
+                position: relative;
+                left: 40%;
+                top: 42%;
+                color: white;
+                font-size: 50px;
+                padding: 5px 12px;
+            }
+        @media screen and (max-width:1700px){
+            .navitems{
+                width: 70%;
+            }
+          
+        }
+        @media screen and (max-width:1500px){
+            .main-content{
+             left: 300px;
+             
+          }
+        }
+        @media screen and (max-width:1200px){
+            .main-content{
+             left: 230px;
+             font-size: 15px;
+          }
+          .navitems{
+                width: 80%;
+            }
+        }
+        @media screen and (max-width:890px){
+            .main-content{
+             left: 100px;
+             font-size: 12px;
+          }
+          .navitems{
+               display: none;
+            }
+            .open{
+                font-size: 60px;
+                color: red;
+                display:block;
+                width: 15%;
+                padding: 30px 18px;
+            }
+         
+        }
+        @media screen and (max-width:720px){
+            .main-content{
+             left: 80px;
+             font-size: 10px;
+          }
+          .icons{
+              left: 20%;
+          }
+        }
+        @media screen and (max-width:520px){
+            .main-content{
+             left: 60px;
+        
+          }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Ashish Cafe</div>
+            <div class="navitems">
+                <ul>
+                    <li><a href="#">Coffee Delivery</a></li>
+                    <li><a href="#">How To Order</a></li>
+                    <li><a href="#">Check More</a></li>
+                    <li><a href="#">Sign up</a></li>
+                </ul>
+              
+            </div>
+            <div class="open"> <i class="fa fa-bars"></i></div>
+        </nav>
+        <span class="icons">
+            <i class="fa fa-facebook-square"></i>
+            <i class="fa fa-github" style="padding: 4px 34px;"></i>
+            <i class="fa fa-instagram" style="padding: 4px 8px;"></i>
+            <i class="fa fa-skype" style="padding: 4px 18px;"></i>
+        </span>
+        <div class="main-content">
+            <h1>WELCOME TO <span>ASHISH CAFE</span>.<br>
+                HOUSE OF CAKE LOVERS OO YES.
+            </h1>
+            <a href="#" class="btn">Click to Order</a>
+            <a href="#" class="btn">Show me more</a>
+        </div>
+        
+    </header>
+   
+</body>
+</html>
